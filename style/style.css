@@ -111,24 +111,32 @@ a.active,a:hover{
 }
 
 
-/* section */
+/* wrapper */
 
-.FlexContainer {
+.container {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    width: 65%;
-    background-color: #2f1d58;
-    height: 80vh;
-    overflow: auto;
+    flex-wrap: wrap;
     flex-direction: row;
+    margin-top: 20px;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
-.FlexContainer div {
-    width: 400px;
-    height: 350px;
-    margin: 20px;
-    background-color: lightblue;
+.info-box {
+    flex: 1;
+    max-width: 60vw;
+    padding: 20px;
+    background-color: #f0f0f0;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.info-box{
+    text-align: center;
+}
+
+@media (max-width: 858px) {
+    .container {
+       font-size: 15px;
+       justify-content: center;
+    }
 }
