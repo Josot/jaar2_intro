@@ -115,6 +115,13 @@ a.active,a:hover{
 
 /* wrapper */
 
+.info_me{
+    border-radius: 50%;
+    height: 30%;
+    width: auto;
+    border: var(--color-background) 3px solid;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -128,11 +135,21 @@ a.active,a:hover{
     flex: 1;
     max-width: 60vw;
     padding: 20px;
-    background-color: rgba(233, 226, 226, 0.8);
+    background-color: rgba(233, 226, 226, 0.98);
     border-radius: 10px;
     flex-direction: row;
     box-sizing: border-box;
     text-align: center;
+}
+
+.info-box h2 {
+    color: var(--color-primary);
+    text-shadow: 2px 2px 2px var(--color-white);
+}
+
+.info-box p{
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 @media (max-width: 858px) {
@@ -141,7 +158,11 @@ a.active,a:hover{
        justify-content: center;
     }
     .info-box{
-        min-width: 60%;
+        min-width: 80%;
+    }
+    .info_me{
+        height: 20%;
+        width: auto;
     }
 }
 
@@ -162,6 +183,7 @@ a.active,a:hover{
     height: 60px;
     background-color: transparent;
     border: 6px solid rgba(255,255,255,0.8);
+    border-radius: 30px;
 }
 
 .box div:nth-child(1){
