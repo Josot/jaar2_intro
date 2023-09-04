@@ -1,27 +1,5 @@
 <?php
-try {
-    // Connect to the SQLite database
-    $db = new PDO('sqlite:../db/db.db');
-    
-    // Set error mode to exception
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
-    // Perform a SELECT query
-    $query = "SELECT * FROM your_table_name";
-    $stmt = $db->query($query);
-    
-    // Fetch data and display results
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        echo "Title: " . $row['id'] . "<br>";
-        echo "Datum: " . $row['name'] . "<br>";
-        // Add more fields as needed
-    }
-    
-    // Close the database connection
-    $db = null;
-} catch (PDOException $e) {
-    echo "Error: " . $e->getMessage();
-}
+require_once '../../db/connection.php';
 ?>
 
 
@@ -59,6 +37,7 @@ try {
       </nav>
 <div class="wrapper">
     <div class="box">
+
         <div></div>
         <div></div>
         <div></div>
@@ -72,7 +51,34 @@ try {
     </div>
 </div>      
 <div class="container_projects">
+    <ul></ul>
+<?php try {
+    // Connect to the SQLite database
+
+    // Perform a SELECT query
+    $query = "SELECT * FROM project";
+    $stmt = $db->query($query);
     
+    // Fetch data and display results
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        echo "<project>";
+        echo "<img class='img-project' src='../../media/pictures/projects/{$row['image']}'>";
+        echo "<h1>" . $row['titel'] . "</h1><br>";
+        echo "<p>" . $row['msg'] . "</p><br>";
+        echo "Datum: " . $row['datum'] . "<br>";
+        echo "<a class='btn_github' href='{$row['github']}' target='_blank'>Github</a>";
+        echo "<a class='btn_site' href='{$row['link']}' target='_target'>Site</a>";
+        echo "</project>";
+        // Add more fields as needed
+    }
+    
+    // Close the database connection
+    $db = null;
+    }
+    catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+    ?>
 </div>
 <script src="../script/script.js"></script>
 </body>
