@@ -66,7 +66,7 @@ require_once '../../db/connection.php';
         echo "<h1>" . $row['titel'] . "</h1><br>";
         echo "<p>" . $row['msg'] . "</p><br>";
         echo "Datum: " . $row['datum'] . "<br>";
-        echo "<a class='btn_github' href='{$row['github']}' target='_blank'>Github</a>";
+        echo "<a href='{$row['github']}' target='_blank'><img class='btn_github' src='../../media/pictures/github1.png'></a>";
         echo "<a class='btn_site' href='{$row['link']}' target='_target'>Site</a>";
         echo "</project>";
         // Add more fields as needed

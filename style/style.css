@@ -51,11 +51,11 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
-
+/* 
 a.active,a:hover{
     background-color: var(--color-active);
     color: var(--color-primary);
-}
+} */
 
 .checkbtn{
     font-size: 30px;
@@ -335,12 +335,16 @@ project {
 .btn_github{
     margin-left: 1rem;
     margin-right: 1rem;
-    background-color: #6e5494;
-    border-radius: 2rem;
+    margin-bottom: -.7rem;
+    background-color: transparent;
+    /* border-radius: 2rem; */
     font-size: .9rem;
-    padding: 0.9rem 2.1rem;
+    /* padding: 0.9rem 2.1rem; */
     transition: 0.3s;
+    width: 40px;
+    height: auto;
 }
+
 
 .btn_site{
     margin-left: 1rem;
