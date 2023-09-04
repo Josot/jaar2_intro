@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/style.css">
     <script src="../script/script.js"></script>
-    <title>About</title>
+    <title>Contact</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +24,10 @@
         </label>
         <label class="logo">Project A</label>
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../project_pagina/project_pagina.html">Project pagina</a></li>
-            <li><a class="active" href="../about/about.html">About</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../project_pagina/project_pagina.php">Project pagina</a></li>
+            <li><a href="../about/about.php">About</a></li>
+            <li><a class="active" href="#">Contact</a></li>
         </ul>
       </nav>
     <div class="wrapper">

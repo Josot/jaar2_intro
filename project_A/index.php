@@ -24,10 +24,10 @@
         </label>
         <label class="logo">Project A</label>
         <ul>
-            <li><a class="active" href="./index.html">Home</a></li>
-            <li><a href="./project_pagina/project_pagina.html">Projects</a></li>
-            <li><a href="./about/about.html">About</a></li>
-            <li><a href="./contact/contact.html">Contact</a></li>
+            <li><a class="active" href="./index.php">Home</a></li>
+            <li><a href="./project_pagina/project_pagina.php">Projects</a></li>
+            <li><a href="./about/about.php">About</a></li>
+            <li><a href="./contact/contact.php">Contact</a></li>
         </ul>
       </nav>
 <div class="wrapper">
@@ -54,8 +54,10 @@
         </p>
         <h2>Website navigation</h2>
         <p>
-            This website is my personal portfolio, here you can find all the projects I am most proud of. You will also be able to read more about who I am and what I do.You can easily contact me through the contact form, and I will get back to you as soon as possible!. You can navigate through the website by using the navigation bar at the top of the page or use buttons below. 
+            This website is my personal portfolio, here you can find all the projects I am most proud of. You will also be able to read more about who I am and what I do.You can easily contact me through the contact form, and I will get back to you as soon as possible! You can navigate through the website by using the navigation bar at the top of the page or use buttons below. 
         </p>
+        <a  href="./about/about.php"><button type="button" class="button">About me</button></a>
+        <a href="./project_pagina/project_pagina.php"><button type="button" class="button">Projects</button></a>
     </div>
 
 </div>
