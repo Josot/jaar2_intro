@@ -1,3 +1,30 @@
+<?php
+try {
+    // Connect to the SQLite database
+    $db = new PDO('sqlite:../db/db.db');
+    
+    // Set error mode to exception
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    // Perform a SELECT query
+    $query = "SELECT * FROM your_table_name";
+    $stmt = $db->query($query);
+    
+    // Fetch data and display results
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        echo "Title: " . $row['id'] . "<br>";
+        echo "Datum: " . $row['name'] . "<br>";
+        // Add more fields as needed
+    }
+    
+    // Close the database connection
+    $db = null;
+} catch (PDOException $e) {
+    echo "Error: " . $e->getMessage();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +32,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/style.css">
-    <script src="../script/script.js"></script>
-    <title>Project Pagina</title>
+    <title>Index</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,35 +43,37 @@
     <script src="https://kit.fontawesome.com/f0015e972f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
       <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">Project A</label>
+        <a href="../index.php"><label class="logo">Project A</label></a>
         <ul>
             <li><a href="../index.php">Home</a></li>
-            <li><a class="active" href="../project_pagina/project_pagina.php">Project pagina</a></li>
+            <li><a class="active" href="../project_pagina/project_pagina.php">Projects</a></li>
             <li><a href="../about/about.php">About</a></li>
             <li><a href="../contact/contact.php">Contact</a></li>
         </ul>
       </nav>
-    <div class="wrapper">
-        <div class="box">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+<div class="wrapper">
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-      <section>
-        
-      </section>
+</div>      
+<div class="container_projects">
+    
+</div>
+<script src="../script/script.js"></script>
 </body>
 </html>

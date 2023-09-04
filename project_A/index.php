@@ -58,6 +58,7 @@
         </p>
         <a  href="./about/about.php"><button type="button" class="button">About me</button></a>
         <a href="./project_pagina/project_pagina.php"><button type="button" class="button">Projects</button></a>
+        <a href="./contact/contact.php"><button type="button" class="button">Contact</button></a>
     </div>
 
 </div>

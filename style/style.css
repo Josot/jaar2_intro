@@ -117,7 +117,7 @@ a.active,a:hover{
 
 .info_me{
     border-radius: 50%;
-    height: 30%;
+    height: 25%;
     width: auto;
     border: var(--color-background) 3px solid;
 }
@@ -161,7 +161,7 @@ a.active,a:hover{
         min-width: 80%;
     }
     .info_me{
-        height: 20%;
+        height: 15%;
         width: auto;
     }
 }
@@ -177,14 +177,19 @@ a.active,a:hover{
     font-size: 16px;
     border-radius: 5px;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
     cursor: pointer;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
 }
 
 .button:hover {
     background-color: var(--color-active);
     color: var(--color-primary);
+}
+
+.container_projects {
+    width: XXX;
 }
 
 /* STYLE FOR BACKGROUND */
