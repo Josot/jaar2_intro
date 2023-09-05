@@ -8,8 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $subject = "New contact form from $name";
 
-    $email_body = "Name: \n$name\n" .
-        "Email: \n$email\n" .
+    $email_body = "Name: \n$name\n\n" .
+        "Email: \n$email\n\n" .
         "Message: \n$message";
 
     if (mail($to, $subject, $email_body)) {
