@@ -63,11 +63,6 @@ nav ul li a{
 }
 
 
-   /* a.active,a:hover{
-    background-color: var(--color-active);
-    color: var(--color-primary);
-}  */
-
 .checkbtn{
     font-size: 30px;
     color: var(--color-white);
