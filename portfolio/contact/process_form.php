@@ -18,5 +18,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "An error occurred, please try again later.";
     }
 
-    header("Location: ../index.php");
+    header("Location: ../../index.php");
 }

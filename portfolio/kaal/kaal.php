@@ -11,9 +11,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f0015e972f.js" crossorigin="anonymous"></script>
 </head>
@@ -24,9 +22,9 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a href="../index.php"><label class="logo">Project A</label></a>
+        <a href="../../index.phpp"><label class="logo">Project A</label></a>
         <ul>
-            <li><a href="../index.php">Home</a></li>
+            <li><a href="../../index.php">Home</a></li>
             <li><a class="active" href="../project_pagina/project_pagina.php">Project pagina</a></li>
             <li><a href="../about/about.php">About</a></li>
             <li><a href="../contact/contact.php">Contact</a></li>

@@ -25,9 +25,9 @@
         <a href="#"><label class="logo">Portfolio</label></a>
         <ul>
             <li><a class="active" href="#">Home</a></li>
-            <li><a href="project_pagina/project_pagina.php">Projects</a></li>
-            <li><a href="about/about.php">About</a></li>
-            <li><a href="contact/contact.php">Contact</a></li>
+            <li><a href="portfolio/project_pagina/project_pagina.php">Projects</a></li>
+            <li><a href="portfolio/about/about.php">About</a></li>
+            <li><a href="portfolio/contact/contact.php">Contact</a></li>
         </ul>
     </nav>
     <div class="wrapper">
@@ -66,9 +66,9 @@
             <p>
                 This website is my personal portfolio, here you can find all the projects I am most proud of. You will also be able to read more about who I am and what I do.You can easily contact me through the contact form, and I will get back to you as soon as possible! You can navigate through the website by using the navigation bar at the top of the page or use buttons below.
             </p>
-            <a href="./about/about.php"><button type="button" class="button">About me</button></a>
-            <a href="./project_pagina/project_pagina.php"><button type="button" class="button">Projects</button></a>
-            <a href="./contact/contact.php"><button type="button" class="button">Contact</button></a>
+            <a href="portfolio/about/about.php"><button type="button" class="button">About me</button></a>
+            <a href="portfolio/project_pagina/project_pagina.php"><button type="button" class="button">Projects</button></a>
+            <a href="portfolio/contact/contact.php"><button type="button" class="button">Contact</button></a>
         </div>
 
     </div>

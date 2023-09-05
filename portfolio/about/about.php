@@ -22,9 +22,9 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a href="../index.php"><label class="logo">Portfolio</label></a>
+        <a href="../../index.php"><label class="logo">Portfolio</label></a>
         <ul>
-            <li><a href="../index.php">Home</a></li>
+            <li><a href="../../index.php">Home</a></li>
             <li><a href="../project_pagina/project_pagina.php">Projects</a></li>
             <li><a class="active" href="../about/about.php">About</a></li>
             <li><a href="../contact/contact.php">Contact</a></li>
