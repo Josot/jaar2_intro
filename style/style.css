@@ -51,11 +51,22 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
-/* 
-a.active,a:hover{
+
+.nav:hover{
     background-color: var(--color-active);
     color: var(--color-primary);
-} */
+}
+
+.active{
+    background-color: var(--color-active);
+    color: var(--color-primary);
+}
+
+
+   /* a.active,a:hover{
+    background-color: var(--color-active);
+    color: var(--color-primary);
+}  */
 
 .checkbtn{
     font-size: 30px;
@@ -213,7 +224,7 @@ label:hover{
     height: 60px;
     background-color: transparent;
     border: 6px solid rgba(255,255,255,0.8);
-    /* border-radius: 30px; */
+    border-radius: 30px;
 }
 
 .box div:nth-child(1){
@@ -274,6 +285,76 @@ label:hover{
     top: 20%;
     left: 80%;
     animation: animate 5s linear infinite;
+}
+
+/* Set 11 */
+.box div:nth-child(11) {
+    top: 75%;
+    left: 30%;
+    animation: animate 20s linear infinite;
+}
+
+/* Set 12 */
+.box div:nth-child(12) {
+    top: 40%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+/* Set 13 */
+.box div:nth-child(13) {
+    top: 60%;
+    left: 15%;
+    animation: animate 18s linear infinite;
+}
+
+/* Set 14 */
+.box div:nth-child(14) {
+    top: 25%;
+    left: 45%;
+    animation: animate 8s linear infinite;
+}
+
+/* Set 15 */
+.box div:nth-child(15) {
+    top: 80%;
+    left: 5%;
+    animation: animate 25s linear infinite;
+}
+
+/* Set 16 */
+.box div:nth-child(16) {
+    top: 10%;
+    left: 90%;
+    animation: animate 30s linear infinite;
+}
+
+/* Set 17 */
+.box div:nth-child(17) {
+    top: 55%;
+    left: 20%;
+    animation: animate 15s linear infinite;
+}
+
+/* Set 18 */
+.box div:nth-child(18) {
+    top: 35%;
+    left: 75%;
+    animation: animate 7s linear infinite;
+}
+
+/* Set 19 */
+.box div:nth-child(19) {
+    top: 70%;
+    left: 85%;
+    animation: animate 9s linear infinite;
+}
+
+/* Set 20 */
+.box div:nth-child(20) {
+    top: 15%;
+    left: 10%;
+    animation: animate 6s linear infinite;
 }
 
 @keyframes animate{
