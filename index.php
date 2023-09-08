@@ -28,6 +28,7 @@
             <li><a href="portfolio/project_pagina/project_pagina.php">Projects</a></li>
             <li><a href="portfolio/about/about.php">About</a></li>
             <li><a href="portfolio/contact/contact.php">Contact</a></li>
+            <li><a href="portfolio/admin/admin.php">Admin</a></li>
         </ul>
     </nav>
     <div class="wrapper">
@@ -69,6 +70,7 @@
             <a href="portfolio/about/about.php"><button type="button" class="button">About me</button></a>
             <a href="portfolio/project_pagina/project_pagina.php"><button type="button" class="button">Projects</button></a>
             <a href="portfolio/contact/contact.php"><button type="button" class="button">Contact</button></a>
+
         </div>
 
     </div>

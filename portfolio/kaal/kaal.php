@@ -28,6 +28,7 @@
             <li><a class="active" href="../project_pagina/project_pagina.php">Project pagina</a></li>
             <li><a href="../about/about.php">About</a></li>
             <li><a href="../contact/contact.php">Contact</a></li>
+            <li><a href="../admin/admin.php">Admin</a></li>
         </ul>
     </nav>
     <div class="wrapper">
