@@ -5,6 +5,23 @@
     --color-background: #2c3e50;
 }
 
+/*SCROLL COLOUR*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -173,6 +190,9 @@ label:hover{
     .info_me{
         height: 15%;
         width: auto;
+    }
+    .contact_form{
+        min-width: 80%;
     }
 }
 
@@ -464,4 +484,44 @@ project a.active:hover {
 project:hover {
     transform: scale(1.05);
     transition: .5s;
+}
+/* CONTACT PAGE */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.contact_form {
+    flex: 1;
+    max-width: 50vw;
+    min-height: 30rem;
+    padding: 20px;
+    background-color: rgba(233, 226, 226, 0.98);
+    border-radius: 10px;
+    flex-direction: row;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact_form h2, .contact_form p{
+    margin-bottom: .5rem;
+}
+
+#message{
+    height: 10rem;
+    width: 25rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 858px) {
+    .contact_form {
+        min-width: 80%;
+    }
+    #message{
+        width: 80%;
+    }
 }

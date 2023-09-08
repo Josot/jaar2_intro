@@ -22,7 +22,7 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a href="../../index.php"><label class="logo">Project A</label></a>
+        <a href="../../index.php"><label class="logo">Portfolio</label></a>
         <ul>
             <li><a href="../../index.php">Home</a></li>
             <li><a href="../project_pagina/project_pagina.php">Projects</a></li>
@@ -55,18 +55,25 @@
         </div>
     </div>
     <section>
-        <form action="../contact/process_form.php" method="POST">
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" placeholder="Your name.." required><br>
+        <div class="contact">
+            <div class="contact_form">
+                <h2>Contact</h2>
+                <p>Feel free to contact me!<i class="fas fa-envelope"></i></p>
 
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="Your email.." required><br>
+                <form action="../contact/process_form.php  " method="POST">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Write your name here" required><br>
 
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" placeholder="Write something.." rows="auto" required></textarea><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Write your email here" required><br>
 
-            <input class="active" type="submit" value="Submit">
-        </form>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" placeholder="Write the message you would like to leave here" rows="auto" required></textarea><br>
+
+                    <input class="button" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 
