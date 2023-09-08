@@ -55,18 +55,20 @@
         </div>
     </div>
     <section>
-        <form action="../contact/process_form.php" method="POST">
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" placeholder="Your name.." required><br>
+        <div class="container">
+            <form action="../contact/process_form.php" method="POST">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name.." required><br>
 
-            <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" placeholder="Your email.." required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Your email.." required><br>
 
-            <label for="message">Message</label><br>
-            <textarea id="message" name="message" placeholder="Write something.." rows="auto" required></textarea><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" placeholder="Write something.." rows="auto" required></textarea><br>
 
-            <input class="active" type="submit" value="Submit">
-        </form>
+                <input class="active" type="submit" value="Submit">
+            </form>
+        </div>
     </section>
 </body>
 
