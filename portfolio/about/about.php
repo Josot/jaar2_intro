@@ -80,6 +80,8 @@
                 </div>
                 <h2>Download my CV below!</h2>
                 <a href="../../media/files/CV.docx"><button class="button">Download CV</button></a>
+                <br>
+                <br>
                 <video width="500px" height=auto controls="controls">
                     <source src="../../media/files/useless.mp4" type="video/mp4">
             </div>
