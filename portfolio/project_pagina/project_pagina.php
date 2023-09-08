@@ -74,7 +74,7 @@ require_once '../../db/connection.php';
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 echo "<project>";
                 echo "<img class='img-project' src='../../media/pictures/projects/{$row['image']}'>";
-                echo "<h1>" . $row['titel'] . "</h1><br>";
+                echo "<h1>" . $row['title'] . "</h1><br>";
                 echo "<p>" . $row['msg'] . "</p><br>";
                 echo "Datum: " . $row['datum'] . "<br>";
                 echo "<a href='{$row['github']}' target='_blank'><img class='btn_github' src='../../media/pictures/github1.png'></a>";

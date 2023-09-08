@@ -64,9 +64,9 @@ require_once '../../db/connection.php';
             <div class="contact_form">
                 <h2>Add projects</h2>
 
-                <form action="../contact/process_form.php  " method="POST">
+                <form action="verwerken.php" method="POST">
                     <label for="titel">Title</label><br>
-                    <input type="text" name="titel" id="titel" required><br>
+                    <input type="text" name="title" id="title" required><br>
 
                     <label for="datum">Date</label><br>
                     <input type="text" name="datum" id="datum" required><br>
@@ -83,7 +83,7 @@ require_once '../../db/connection.php';
                     <label for="github">Github</label><br>
                     <input type="text" name="github" id="github" required><br>
 
-                    <input class="button" type="submit" value="ADD">
+                    <input class="button" type="submit" value="submit">
                 </form>
             </div>
         </div>
@@ -100,12 +100,12 @@ require_once '../../db/connection.php';
             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 echo "<project>";
                 echo "<img class='img-project' src='../../media/pictures/projects/{$row['image']}'>";
-                echo "<h1>" . $row['titel'] . "</h1><br>";
+                echo "<h1>" . $row['title'] . "</h1><br>";
                 echo "<p>" . $row['msg'] . "</p><br>";
                 echo "Datum: " . $row['datum'] . "<br>";
                 echo "<a href='{$row['github']}' target='_blank'><img class='btn_github' src='../../media/pictures/github1.png'></a>";
                 echo "<a class='btn_site' href='{$row['link']}' target='_target'>Site</a>";
-                echo "<a class='btn_delete' href='delete.php'>Delete</a>";
+                echo '<button><a href="delete.php?title=' . urlencode($row['title']) . '">Delete</a></button>';
                 echo "</project>";
                 // Add more fields as needed
             }
