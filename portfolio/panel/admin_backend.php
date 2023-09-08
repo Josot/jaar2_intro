@@ -2,7 +2,6 @@
 require_once '../../db/connection.php';
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,8 @@ require_once '../../db/connection.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/style.css">
-    <title>Projects</title>
+    <script src="../script/script.js"></script>
+    <title>Project Pagina</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,16 +21,15 @@ require_once '../../db/connection.php';
 </head>
 
 <body>
-
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a href="../../index.php"><label class="logo">Portfolio</label></a>
+        <a href="../../index.phpp"><label class="logo">Portfolio admin</label></a>
         <ul>
             <li><a href="../../index.php">Home</a></li>
-            <li><a class="active" href="../project_pagina/project_pagina.php">Projects</a></li>
+            <li><a href="../project_pagina/project_pagina.php">Project pagina</a></li>
             <li><a href="../about/about.php">About</a></li>
             <li><a href="../contact/contact.php">Contact</a></li>
             <li><a href="../admin/admin.php">Admin</a></li>
@@ -38,7 +37,6 @@ require_once '../../db/connection.php';
     </nav>
     <div class="wrapper">
         <div class="box">
-
             <div></div>
             <div></div>
             <div></div>
@@ -61,8 +59,36 @@ require_once '../../db/connection.php';
             <div></div>
         </div>
     </div>
+    <section>
+        <div class="contact">
+            <div class="contact_form">
+                <h2>Add projects</h2>
+
+                <form action="verwerken.php" method="POST">
+                    <label for="titel">Title</label><br>
+                    <input type="text" name="title" id="title" required><br>
+
+                    <label for="datum">Date</label><br>
+                    <input type="text" name="datum" id="datum" required><br>
+
+                    <label for="image">Image name</label><br>
+                    <input type="text" name="image" id="image" required><br>
+
+                    <label for="msg">Description</label><br>
+                    <textarea name="msg" id="msg" cols="30" rows="10" required></textarea><br>
+
+                    <label for="link">Link</label><br>
+                    <input type="text" name="link" id="link" required><br>
+
+                    <label for="github">Github</label><br>
+                    <input type="text" name="github" id="github" required><br>
+
+                    <input class="button" type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </section>
     <div class="container_projects">
-        <ul></ul>
         <?php try {
             // Connect to the SQLite database
 
@@ -79,6 +105,7 @@ require_once '../../db/connection.php';
                 echo "Datum: " . $row['datum'] . "<br>";
                 echo "<a href='{$row['github']}' target='_blank'><img class='btn_github' src='../../media/pictures/github1.png'></a>";
                 echo "<a class='btn_site' href='{$row['link']}' target='_target'>Site</a>";
+                echo '<button><a href="delete.php?title=' . urlencode($row['title']) . '">Delete</a></button>';
                 echo "</project>";
                 // Add more fields as needed
             }
@@ -90,7 +117,6 @@ require_once '../../db/connection.php';
         }
         ?>
     </div>
-    <script src="../script/script.js"></script>
 </body>
 
 </html>

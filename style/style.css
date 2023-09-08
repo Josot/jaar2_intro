@@ -5,6 +5,23 @@
     --color-background: #2c3e50;
 }
 
+/*SCROLL COLOUR*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -174,6 +191,9 @@ label:hover{
         height: 15%;
         width: auto;
     }
+    .contact_form{
+        min-width: 80%;
+    }
 }
 
 .button {
@@ -196,10 +216,6 @@ label:hover{
 .button:hover {
     background-color: var(--color-active);
     color: var(--color-primary);
-}
-
-.container_projects {
-    width: XXX;
 }
 
 /* STYLE FOR BACKGROUND */
@@ -371,7 +387,6 @@ label:hover{
     justify-content: center;
     align-content: center;
     /* order: 4; */
-
     z-index: 1;
     max-width: 92rem;
     /* pad: 0 4rem; */
@@ -389,7 +404,7 @@ project {
     flex-direction: column;
     /* width: 50%; */
     max-height: 30rem;
-    min-height: 33rem;
+    min-height: 35rem;
     text-align: center;
     margin: 1rem 1rem 1rem 1rem;
     /* border: 1px solid black; */
@@ -432,6 +447,16 @@ project {
     transition: 0.3s;
 }
 
+.btn_delete {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: rgb(166, 44, 44);
+    border-radius: 2rem;
+    font-size: .9rem;
+    padding: 0.9rem 2.1rem;
+    transition: 0.3s;
+}
+
 project a {
     display: inline-block;
     padding: 0.9rem 1.2rem;
@@ -464,4 +489,161 @@ project a.active:hover {
 project:hover {
     transform: scale(1.05);
     transition: .5s;
+}
+/* CONTACT PAGE */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.contact_form {
+    flex: 1;
+    max-width: 50vw;
+    min-height: 30rem;
+    padding: 20px;
+    background-color: rgba(233, 226, 226, 0.98);
+    border-radius: 10px;
+    flex-direction: row;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact_form h2, .contact_form p{
+    margin-bottom: .5rem;
+}
+
+#message{
+    height: 10rem;
+    width: 25rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 858px) {
+    .contact_form {
+        min-width: 80%;
+    }
+    #message{
+        width: 80%;
+    }
+}
+
+.login_box{
+    flex: 1;
+    max-width: 30vw;
+    min-height: 15vw;
+    padding: 20px;
+    background-color: rgba(233, 226, 226, 0.98);
+    border-radius: 10px;
+    flex-direction: row;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.add_box{
+    .login_box {
+            flex: 1;
+            max-width: 30vw;
+            min-height: 15vw;
+            padding: 20px;
+            background-color: rgba(233, 226, 226, 0.98);
+            border-radius: 10px;
+            flex-direction: row;
+            box-sizing: border-box;
+            text-align: center;
+        }
+}
+
+/* SKILLS */
+
+.skills {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+@keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+@-o-keyframes load {
+    from {
+        width: 0%
+    }
+}
+
+.bar {
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+    content: attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+}
+
+.bar.front::before {
+    background-color: #ffcc33;
+}
+
+.bar.back::before {
+    background-color: #a6cfe3;
+}
+
+.bar.learning::before {
+    width: calc(20% - 10px);
+}
+
+.bar.basic::before {
+    width: calc(40% - 10px);
+}
+
+.bar.intermediate::before {
+    width: calc(60% - 10px);
+}
+
+.bar.advanced::before {
+    width: calc(75% - 10px);
+}
+
+.bar.advanced+::before {
+    width: calc(80% - 10px);
+}
+
+.bar.expert::before {
+    width: calc(90% - 10px);
+}
+
+.bar.expert+::before {
+    width: calc(100% - 10px);
 }
