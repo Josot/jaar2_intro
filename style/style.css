@@ -544,17 +544,15 @@ project:hover {
 }
 
 .add_box{
-    .login_box {
-            flex: 1;
-            max-width: 30vw;
-            min-height: 15vw;
-            padding: 20px;
-            background-color: rgba(233, 226, 226, 0.98);
-            border-radius: 10px;
-            flex-direction: row;
-            box-sizing: border-box;
-            text-align: center;
-        }
+    flex: 1;
+    max-width: 30vw;
+    min-height: 15vw;
+    padding: 20px;
+    background-color: rgba(233, 226, 226, 0.98);
+    border-radius: 10px;
+    flex-direction: row;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 /* SKILLS */

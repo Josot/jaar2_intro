@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Index</title>
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,7 +58,7 @@
     </div>
     <div class="container">
         <div class="info-box">
-            <img src="../media/pictures/me.jpeg" class="info_me" alt="Joost">
+            <img src="./media/pictures/me.jpeg" class="info_me" alt="Joost">
             <h2>Information</h2>
             <p>I am Joost van Ewijk and I am <span id="ageDisplay"></span> years old, I was born in the Netherlands and live close to The Hague.
                 I am a student at Grafisch Lyceum Rotterdam and I am studying for MBO4 Software Development.
@@ -66,7 +66,7 @@
             </p>
             <h2>Website navigation</h2>
             <p>
-                This website is my personal portfolio, here you can find all the projects I am most proud of. You will also be able to read more about who I am and what I do.You can easily contact me through the contact form, and I will get back to you as soon as possible! You can navigate through the website by using the navigation bar at the top of the page or use buttons below.
+                This website is my personal portfolio, here you can find all the projects I am most proud of. You will also be able to read more about who I am and what I do. You can easily contact me through the contact form, and I will get back to you as soon as possible! You can navigate through the website by using the navigation bar at the top of the page or use the buttons below.
             </p>
             <a href="portfolio/about/about.php"><button type="button" class="button">About me</button></a>
             <a href="portfolio/project_pagina/project_pagina.php"><button type="button" class="button">Projects</button></a>

@@ -65,7 +65,7 @@
                     My name is Joost van Ewijk, I'm
                     <span id="ageDisplay"></span> years old and I live close to The Hague. I attend Grafisch Lyceum Rotterdam and am currently in my 2nd year of Software Development MBO4.
                     I consider myself a problem-solver and a good team player, I enjoy organizing and planning things, and I am always looking for ways to improve myself. I am a fast learner and I am always eager to learn new things.
-                    In my free time I enjoy riding my car around (hopefully someday a motorcycle) and I enjoy playing video games with my friends.
+                    In my free time, I enjoy driving my car around (hopefully someday a motorcycle) and I enjoy playing video games with my friends.
                 </p>
                 <h2>Skills</h2>
                 <div class="skills">
@@ -77,8 +77,11 @@
                     <div class="bar front advanced+" data-skill="collaboration"></div>
                     <div class="bar front expert" data-skill="HTML5"></div>
                     <div class="bar front expert+" data-skill="Teamwork"></div>
-
                 </div>
+                <h2>Download my CV below!</h2>
+                <a href="../../media/files/CV.docx"><button class="button">Download CV</button></a>
+                <video width="500px" height=auto controls="controls">
+                    <source src="../../media/files/useless.mp4" type="video/mp4">
             </div>
 
 
