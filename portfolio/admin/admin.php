@@ -25,7 +25,7 @@
         <a href="../../index.phpp"><label class="logo">Project A</label></a>
         <ul>
             <li><a href="../../index.php">Home</a></li>
-            <li><a href="../project_pagina/project_pagina.php">Project pagina</a></li>
+            <li><a href="../project_pagina/project_pagina.php">Projects</a></li>
             <li><a href="../about/about.php">About</a></li>
             <li><a href="../contact/contact.php">Contact</a></li>
             <li><a class="active" href="#">Admin</a></li>
@@ -70,6 +70,7 @@
                     </div>
                     <input class="button" type="button" name="" value="Sign in">
                 </form>
+                <p> The admin log in function does not work yet, please check the word document added to the assignment on how to use the admin panel regardless. </p>
             </div>
     </section>
 </body>

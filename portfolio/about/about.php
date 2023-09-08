@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f0015e972f.js" crossorigin="anonymous"></script>
+    <!-- script JS -->
+    <script src="../../script/script.js"></script>
 </head>
 
 <body>
@@ -43,10 +45,44 @@
             <div></div>
             <div></div>
             <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
     <section>
+        <div class="container">
+            <div class="info-box">
+                <h2>About me</h2>
+                <p>
+                    My name is Joost van Ewijk, I'm
+                    <span id="ageDisplay"></span> years old and I live close to The Hague. I attend Grafisch Lyceum Rotterdam and am currently in my 2nd year of Software Development MBO4.
+                    I consider myself a problem-solver and a good team player, I enjoy organizing and planning things, and I am always looking for ways to improve myself. I am a fast learner and I am always eager to learn new things.
+                    In my free time I enjoy riding my car around (hopefully someday a motorcycle) and I enjoy playing video games with my friends.
+                </p>
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="bar learning" data-skill="C++"></div>
+                    <div class="bar learning" data-skill="C#"></div>
+                    <div class="bar back basic" data-skill="Lua"></div>
+                    <div class="bar back intermediate" data-skill="Python"></div>
+                    <div class="bar front advanced" data-skill="CSS3"></div>
+                    <div class="bar front advanced+" data-skill="collaboration"></div>
+                    <div class="bar front expert" data-skill="HTML5"></div>
+                    <div class="bar front expert+" data-skill="Teamwork"></div>
 
+                </div>
+            </div>
+
+
+        </div>
     </section>
 </body>
 

@@ -29,6 +29,7 @@
             <li><a href="portfolio/about/about.php">About</a></li>
             <li><a href="portfolio/contact/contact.php">Contact</a></li>
             <li><a href="portfolio/admin/admin.php">Admin</a></li>
+            <!-- DE ADMIN PANEL WERKT NOG NIET VIA DE INLOG, DIT WORD MOGELIJKWIJS LATER NOG GEFIXED -->
         </ul>
     </nav>
     <div class="wrapper">
@@ -59,7 +60,7 @@
         <div class="info-box">
             <img src="../media/pictures/me.jpeg" class="info_me" alt="Joost">
             <h2>Information</h2>
-            <p>I am Joost van Ewijk and I am 19 years old, I was born in the Netherlands and currently live in Zoetermeer.
+            <p>I am Joost van Ewijk and I am <span id="ageDisplay"></span> years old, I was born in the Netherlands and live close to The Hague.
                 I am a student at Grafisch Lyceum Rotterdam and I am studying for MBO4 Software Development.
                 I am currently in my second year of this study and I am enjoying learning new things about programming a lot. I am also learning a lot about the design of websites and applications.
             </p>
