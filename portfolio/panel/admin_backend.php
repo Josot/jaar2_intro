@@ -26,7 +26,7 @@ require_once '../../db/connection.php';
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <a href="../../index.phpp"><label class="logo">Portfolio admin</label></a>
+        <a href="../../index.php"><label class="logo">Portfolio admin</label></a>
         <ul>
             <li><a href="../../index.php">Home</a></li>
             <li><a href="../project_pagina/project_pagina.php">Project pagina</a></li>
