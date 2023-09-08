@@ -56,7 +56,21 @@
         </div>
     </div>
     <section>
-
+        <div class="container">
+            <div class="login_box">
+                <form>
+                    <h1>Login</h1>
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="User" name="user" value="">
+                    </div>
+                    <div class="textbox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" name="password" value="">
+                    </div>
+                    <input class="button" type="button" name="" value="Sign in">
+                </form>
+            </div>
     </section>
 </body>
 
